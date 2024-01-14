@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gridContainer {
+
+  width: 100%;
+  min-height: 250vh;
+  height: auto;
+  display: grid;
+
+
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 85% 15% !important;
+}
+
+.Header {
+
+width: 100%;
+height: 100%;
+  text-align: center;
+  color: cornflowerblue;
+  grid-column: 1/4;
+}
+
+.Header nav {
+  height: 100%;
+  width: 100%;
+}
+
+.Aside1 {
+
+
+  text-align: center;
+  padding-top: 15px;
+
+
+
+}
+
+.Aside2 {
+ 
+
+  text-align: center;
+
+
+
+
+}
+
+.Body {
+  height: 100%;
+  width: 100%;
+  grid-column: 2/3;
+
+
+  text-align: center;
+
+  color: black;
+
+
+  padding-bottom: 300px;
+}
+
+/*styling for the body starts here*/
+
+.textContainer {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0;
+  text-align: justify;
+
+}
+
+.heading1{
+  font-size: 35px;
+}
+.textContainer h1{
+  color: green;
+}
+
+.textContainer h2 {
+  padding-bottom: 30px;
+  letter-spacing: 5px;
+}
+
+.textContainer a {
+  text-decoration: none;
+  color: rgb(3, 56, 3);
+}
+
+.textContainer i {
+  font-size: 20px;
+  margin-left: 15px;
+
+}
+
+.firstGrid {
+  display: grid;
+  grid-template-columns: 100%;
+  padding-bottom: 100px;
+}
+
+.lightGreyBox {
+  background-color: #f8f8f8;
+  padding: 40px;
+  text-align: justify;
+}
+
+.lightGreyBox h2 {
+  letter-spacing: 5px;
+}
+
+.lightGreyBox h4 {
+  text-indent: 2em;
+  letter-spacing: 3px;
+
+}
+
+
+.firstGridImageContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.firstSpan {
+  color: rgb(90, 90, 90);
+}
+
+.secondSpan {
+  color: rgb(17, 17, 17);
+}
+
+.greenHeading {
+  color: rgb(3, 84, 3);
+}
+
+.imageContainer {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+/*styling for the body ends here*/
+
+
+
+
+
+.Footer {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  grid-column: 1/4;
+  color: cornflowerblue;
+
+}
+
+.logo {
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 11px 1px black;
+}
+
+.Footer a {
+  text-decoration: none;
+  color: rgb(25, 56, 34);
+
+}
+
+.Footer i {
+
+  color: rgb(25, 56, 34);
+
+}
+
+.Footer a:visited {
+
+  color: rgb(25, 56, 34);
+
+}
+
+.Footer a:hover {
+  font-size: 22px;
+  transition-duration: 1s;
+  transition-delay: 0.2s;
+
+}
+
+
+
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+  .Aside2{
+    display: none;
+  }
+
+  span{
+    font-size: 18px;
+  }
+  .textContainer {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    text-align: center;
+  
+  }
+  .lightGreyBox h4 {
+    text-align: left;
+    text-indent: 0;
+    font-size: 16px !important;
+    letter-spacing: normal;
+}
+  .textContainer h4{
+    font-size: 18px !important;
+  }
+  
+  .heading1{
+    font-size: 20px;
+  }
+  .textContainer h1{
+    color: green;
+  }
+  
+  .textContainer h2 {
+    padding-bottom: 30px;
+    letter-spacing: 3px;
+  }
+  
+  .textContainer a {
+    text-decoration: none;
+    color: rgb(3, 56, 3);
+  }
+  
+  .textContainer i {
+    font-size: 20px;
+    margin-left: 15px;
+  
+  }
+  .carouselContainer {
+    width: 100%;
+    margin: auto;
+    height: 60vh;
+    margin-top: 30px;
+    box-shadow: 1px 1px 20px 1px black;
+    margin-bottom: 200px;
+  }
+
+  .carouselContainer img {
+    height: 60vh;
+    width: 100vw;
+  }
+
+  .textContainer {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    text-align: justify;
+    font-size: 18px;
+
+
+  }
+
+  .firstGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 100px;
+  }
+
+  .differentEnergiesGrid {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 1300px;
+  }
+
+
+  .secondGrid {
+    grid-template-columns: 1fr;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-top: 500px;
+  }
+
+  .secondGrid ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+
+
+ 
+  .carouselContainer {
+    width: 100%;
+    margin: auto;
+    height: 70vh;
+    margin-top: 30px;
+    box-shadow: 1px 1px 20px 1px black;
+    margin-bottom: 100px;
+  }
+
+  .carouselContainer img {
+    height: 70vh;
+    width: 100vw;
+  }
+
+  .textContainer {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    text-align: justify;
+    font-size: 18px;
+
+
+  }
+
+  .firstGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 100px;
+  }
+
+  .differentEnergiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 700px;
+  }
+
+
+  .secondGrid {
+    grid-template-columns: 1fr;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-top: 100px;
+  }
+
+  .secondGrid ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .firstGridImageContainer{
+    padding-bottom: 100px;
+  }
+}

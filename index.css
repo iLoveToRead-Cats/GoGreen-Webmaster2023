@@ -1,0 +1,69 @@
+/* styles.css */
+
+:root {
+  --primary-color: #4f6f52;
+  --secondary-color: #739072;
+  --third-color: #86a789;
+  --font-family: "Montserrat", sans-serif;
+  /* Add more global variables here */
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+/* Add more global styles here */
+.nav-link {
+  color: var(--primary-color) !important;
+  font-weight: 700 !important;
+  font-size: 16px;
+  border-bottom: 2px solid white;
+}
+.nav-link:hover {
+  border-bottom: 2px solid var(--third-color);
+}
+.carouselContainer {
+  height: fit-content;
+  margin-bottom: 90px;
+}
+.heading {
+  font-weight: 700;
+  font-size: 2rem !important;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.heading_1 {
+  font-weight: 800;
+  font-size: 3rem !important;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.container_p {
+  color: black;
+  font-size: large;
+  font-weight: 500;
+}
+
+.section {
+  margin-top: 120px !important;
+}
+.color_third {
+  columns: var(--third-color) !important;
+}
+.section_a {
+  font-size: 15px !important;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+.energy {
+  width: 300px;
+  height: 300px;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: white !important;
+}
